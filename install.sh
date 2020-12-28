@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Don not auto update homebrew for every brew installation
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 # Ask for the administrator password upfront.
 sudo -v
 
