@@ -16,14 +16,15 @@ brew install mongodb-community
 applications=(
   visual-studio-code
   intellij-idea
+  iterm2
   firefox
   brave-browser
   postman
   flycut
-  docker
   notion
   evernote
   zoom
+  docker
 )
 
 e_header "Installing desktop applications.. This may take little longer"

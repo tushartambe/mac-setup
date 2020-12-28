@@ -87,11 +87,14 @@ fi
 source tools/install_npm_packages.sh
 
 # 8. Install brew taps and casks
-source tools/install_npm_packages.sh
+source tools/install_brew_taps_and_casks.sh
 
 # 9. Install p10k theme
 e_header "Installing p10k Theme. This will change zshrc"
 brew install romkatv/powerlevel10k/powerlevel10k
 echo 'source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+
+#Source zshrc
+source ~/.zshrc
 
 e_thanks "Cool Your setup is done.. Enjoy🎉🎉"
