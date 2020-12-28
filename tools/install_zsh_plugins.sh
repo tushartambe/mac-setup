@@ -8,7 +8,6 @@ zsh_plugins=(
   tree
   ack
   tig
-  autojump
   watch
   bat
   tldr
