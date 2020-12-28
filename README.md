@@ -16,3 +16,6 @@ git clone https://github.com/tushartambe/mac-setup ~/mac-setup && cd mac-setup
 ```bash
 sh install.sh
 ```
+
+---
+If script exited after installing oh-my-zsh then just rerun the script and don't set github mail and username 
