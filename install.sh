@@ -20,7 +20,7 @@ source dock.sh
 
 # 1. Git configuration
 
-ask "${blue} (Option) Enter Your Github Email: "
+ask "${blue} (Press enter to skip) Enter Your Github Email: "
 read -r mailId
 if is_empty $mailId; then
   git config --global user.email "$mailId" # Git Email Id
@@ -29,7 +29,7 @@ else
   e_error "Not set"
 fi
 
-ask "${blue} (Option) Enter Your Github Username: "
+ask "${blue} (Press enter to skip) Enter Your Github Username: "
 read -r userName
 if is_empty $userName; then
   git config --global user.name "$userName" # Git Username

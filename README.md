@@ -19,9 +19,19 @@ sh install.sh
 
 ---
 
-##### `Note`
+##### `Solve Errors and interruptions`
 
-If script exited after installing oh-my-zsh then just rerun the script and don't set github mail and username
+* Script will exit when you make zsh as default shell after installing oh-my-zsh then just `rerun the script` and don't set github mail and username
+* If you get following error
+```
+[oh-my-zsh] Insecure completion-dependent directories detected:
+```
+Just set `ZSH_DISABLE_COMPFIX=true` in `~/.zshrc` before you source .oh-my-zsh in your zshrc file, and open new terminal or run `source ~/.zshrc`. 
+* If auto-suggestions are shown in same color as your command then change and update it in colors tab of iterm2.
+```
+iTerm2 → Profiles → Open Profiles... → Select Custom → Edit Profiles...→ In the Colors tab → Check Black Bright
+```
+after changing this start new terminal.
 
 ---
 
