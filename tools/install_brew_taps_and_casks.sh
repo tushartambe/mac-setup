@@ -3,7 +3,7 @@
 e_header "Installing taps.."
 #fira code font
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code
 
 #Heroku
 brew tap heroku/brew
