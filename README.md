@@ -3,7 +3,10 @@
 ---
 Set up your development environment on macOs very easily with just one command.
 
-### Setps to follow :
+
+Please go through REAMDE.md completely before starting.
+
+### `Setps to follow :`
 
 ##### `1. Clone the repo`
 
@@ -17,16 +20,25 @@ git clone https://github.com/tushartambe/mac-setup ~/mac-setup && cd mac-setup
 sh install.sh
 ```
 
+##### `3. Setup iTerm2`
+
+Import the `Default-Iterm2-Profile.json` file to your iTerm.
+```
+Open iTerm2 > Open Preferences > Profiles > Other actions > Import JSON Profiles.. > Select this folder's `Default-Iterm2-Profile.json` file.
+```
+
 ---
 
-##### `Solve Errors and interruptions`
+### `Solve Errors and interruptions :`
 
-* Script will exit when you make zsh as default shell after installing oh-my-zsh then just `rerun the script` and don't set github mail and username
+* Script will exit when you make zsh as default shell after installation of oh-my-zsh. Don't worry! Just `rerun the script` and don't set github mail and username.
+
 * If you get following error
 ```
 [oh-my-zsh] Insecure completion-dependent directories detected:
 ```
 Just set `ZSH_DISABLE_COMPFIX=true` in `~/.zshrc` before you source .oh-my-zsh in your zshrc file, and open new terminal or run `source ~/.zshrc`. 
+
 * If auto-suggestions are shown in same color as your command then change and update it in colors tab of iterm2.
 ```
 iTerm2 → Profiles → Open Profiles... → Select Custom → Edit Profiles...→ In the Colors tab → Check Black Bright
