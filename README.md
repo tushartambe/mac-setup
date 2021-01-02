@@ -34,18 +34,18 @@ Open iTerm2 > Open Preferences > Profiles > Other actions > Import JSON Profiles
 * If script exited after you make zsh as default shell after installation of `oh-my-zsh`. Don't worry! Just `rerun the script` and don't set github mail and username. `oh-my-zsh` installation will be skipped.
 
 * If you get following error
-```
-[oh-my-zsh] Insecure completion-dependent directories detected:
-```
+
+`[oh-my-zsh] Insecure completion-dependent directories detected:`
+
 Just set `ZSH_DISABLE_COMPFIX=true` in `~/.zshrc` before you source .oh-my-zsh in your zshrc file, and open new terminal or run `source ~/.zshrc`. 
 
 * If auto-suggestions are shown in same color as your command then change and update it in colors tab of iterm2.
-```
-iTerm2 → Profiles → Open Profiles... → Select Custom → Edit Profiles...→ In the Colors tab → Check Black Bright
-```
+
+`iTerm2 → Profiles → Open Profiles... → Select Custom → Edit Profiles...→ In the Colors tab → Check Black Bright `
+
 after changing this start new terminal.
 
-OR
+**OR**
 
 Just do `3. Setup iTerm2` this step to apply my iTerm settings at the end.
 
