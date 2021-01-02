@@ -19,5 +19,8 @@ mkdir -p $VIM_PLUGINS_PATH
 e_header "Installing vim plugins.."
 for i in ${vim_plugins[@]}; do
   SUBSTR=$(echo $i | cut -d'/' -f5 | cut -d'.' -f1)
+  e_header "Installing : $SUBSTR."
   git clone $i "$VIM_PLUGINS_PATH/$SUBSTR"
 done
+
+e_success "Installed vim plugins sucessfully.."

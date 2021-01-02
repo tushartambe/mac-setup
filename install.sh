@@ -15,8 +15,8 @@ done 2>/dev/null &
 
 source helpers.sh
 
-#Dock setup
-source dock.sh
+#Setting mac defaults
+source mac_defaults.sh
 
 # 1. Git configuration
 
@@ -67,6 +67,7 @@ fi
 source tools/install_zsh_plugins.sh
 
 # 5. Install Vim Plugins and copy vimrc
+e_header "Copying vimrc on your local.."
 cp dotFiles/vimrc ~/.vimrc
 source tools/install_vim_plugins.sh
 

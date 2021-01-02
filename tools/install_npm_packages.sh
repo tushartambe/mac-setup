@@ -11,5 +11,8 @@ packages=(
 
 e_header "Installing npm packages.."
 for i in ${packages[@]}; do
+  e_header "Installing : $i."
   npm install -g $i
 done
+
+e_success "Installed npm global packages sucessfully.."
