@@ -31,7 +31,7 @@ Open iTerm2 > Open Preferences > Profiles > Other actions > Import JSON Profiles
 
 ### `Solve Errors and interruptions :`
 
-* Script will exit when you make zsh as default shell after installation of oh-my-zsh. Don't worry! Just `rerun the script` and don't set github mail and username.
+* If script exited after you make zsh as default shell after installation of `oh-my-zsh`. Don't worry! Just `rerun the script` and don't set github mail and username. `oh-my-zsh` installation will be skipped.
 
 * If you get following error
 ```
@@ -44,6 +44,10 @@ Just set `ZSH_DISABLE_COMPFIX=true` in `~/.zshrc` before you source .oh-my-zsh i
 iTerm2 → Profiles → Open Profiles... → Select Custom → Edit Profiles...→ In the Colors tab → Check Black Bright
 ```
 after changing this start new terminal.
+
+OR
+
+Just do `3. Setup iTerm2` this step to apply my iTerm settings at the end.
 
 ---
 
