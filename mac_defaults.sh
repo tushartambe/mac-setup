@@ -7,6 +7,11 @@ e_note "This requires restart you can override it > System Preferences, click Ke
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
+# Enable tap to click for trackpad
+e_header "Enable tap to click for trackpad."
+e_note "This requires restart you can override it > System Preferences, click trackpad."
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
 # Mapping caps lock to control
 # refer link https://stackoverflow.com/a/46460200
 e_header "Mapping CAPS LOCK to control."
