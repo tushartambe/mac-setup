@@ -25,6 +25,7 @@ applications=(
   brave-browser
   postman
   flycut
+  slack
   notion
   evernote
   zoom
