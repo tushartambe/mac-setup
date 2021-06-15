@@ -1,0 +1,103 @@
+# Status bar
+set -g default-terminal "screen-256color"
+
+# Change prefix key
+unbind C-b
+set -g prefix C-a
+
+# reload conf
+bind r source-file ~/.tmux.conf
+
+# move through panes
+unbind h
+bind -r h select-pane -L
+
+unbind j
+bind -r j select-pane -D
+
+unbind k
+bind -r k select-pane -U
+
+unbind l
+bind -r l select-pane -R
+
+unbind n
+bind -r n next-window
+
+unbind p
+bind -r p previous-window
+
+# Resizing
+bind -r C-h resize-pane -L 5
+bind -r C-j resize-pane -D 5
+bind -r C-k resize-pane -U 5
+bind -r C-l resize-pane -R 5
+
+# More comfortable split shortcuts  
+bind \ split-window -h -c '#{pane_current_path}'  # Split panes horizontal
+bind - split-window -v -c '#{pane_current_path}'  # Split panes vertically
+
+# window list
+setw -g automatic-rename on
+set-window-option -g mode-keys vi
+set-window-option -g automatic-rename off
+
+# enable mouse
+set -g mouse on
+
+# Status update interval
+set -g status-interval 1
+
+# UI improvements copied originally from https://github.com/jimeh/tmux-themepack
+
+# Basic status bar colors
+set -g status-style fg=cyan,bg=black
+
+# Left side of status bar
+set -g status-left-style fg=green,bg=black
+set -g status-left-length 40
+set -g status-left "#S #[fg=white]» #[fg=yellow]#I #[fg=cyan]#P"
+
+# Right side of status bar
+set -g status-right-style fg=cyan,bg=black
+set -g status-right-length 40
+set -g status-right "#H #[fg=white]« #[fg=yellow]%H:%M:%S #[fg=green]%d-%b-%y"
+
+# Window status
+set -g window-status-format " #I:#W#F "
+set -g window-status-current-format " #I:#W#F "
+
+# Current window status
+set -g window-status-current-style fg=black,bg=red
+
+# Window with activity status
+set -g window-status-activity-style fg=black,bg=yellow
+
+# Window separator
+set -g window-status-separator ""
+
+# Window status alignment
+set -g status-justify centre
+
+# Pane border
+set -g pane-border-style fg=default,bg=default
+
+# Active pane border
+set -g pane-active-border-style fg=green,bg=default
+
+# Pane number indicator
+set -g display-panes-colour default
+set -g display-panes-active-colour default
+
+# Clock mode
+set -g clock-mode-colour red
+set -g clock-mode-style 24
+
+# Message
+set -g message-style fg=default,bg=default
+
+# Command message
+set -g message-command-style fg=default,bg=default
+
+# Mode
+set -g mode-style fg=default,bg=red

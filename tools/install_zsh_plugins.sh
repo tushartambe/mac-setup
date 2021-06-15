@@ -46,3 +46,7 @@ fi
 
 #this step is already done when copy older zshrc
 #echo 'plugins=(git zsh-autosuggestions autojump zsh-syntax-highlighting)' >>! ~/.zshrc
+
+e_header "Creating tmux config..."
+cp dotFiles/tmuxconf ~/.tmux.conf
+e_success "Set tmux config at ~/.tmux.conf"
